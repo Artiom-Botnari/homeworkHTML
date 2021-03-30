@@ -195,28 +195,28 @@
 		<h2 class="text-center">Contact us</h2>
 		<div class="row pt-3">
 			<div class="col-md-6">
-				<form action="mailto:botnariartiom97@gmail.com" method="GET" enctype="text/plain">
+				<form action="mailto:botnariartiom97@gmail.com" method="POST" enctype="text/plain">
 					<div class="form-row">
 						<div class="form-group col-md-6">
 							<label for="form_name">Name</label>
-							<input type="text" class="form-control" id="form_name" placeholder="Enter your full name" required>
+							<input type="text" class="form-control" id="form_name" name="form_name" placeholder="Enter your full name" required>
 						</div>
 						<div class="form-group col-md-6">
 						  <label for="form_email">Email</label>
-						  <input type="email" class="form-control" id="form_email" placeholder="Enter your email address" required>
+						  <input type="email" class="form-control" id="form_email" name="form_email" placeholder="Enter your email address" required>
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="form_subject">Subject</label>
-						<input type="text" class="form-control" id="form_subject" placeholder="Subject for email">
+						<input type="text" class="form-control" id="form_subject" name="subject" placeholder="Subject for email">
 					</div>
 					<div class="form-group">
 						<label for="form_message">Message</label>
-						<textarea class="form-control" id="form_message" rows="3" placeholder="Do you have some sugestions or ideas? Please send it to us."></textarea>
+						<textarea class="form-control" id="form_message" name="form_message" rows="3" placeholder="Do you have some sugestions or ideas? Please send it to us."></textarea>
 					</div>
 					<div class="form-group">
 						<label for="form_file">Attach file</label>
-						<input type="file" class="form-control-file" id="form_file">
+						<input type="file" class="form-control-file" id="form_file" name="file">
 					</div>
 					<input type="submit" class="btn btn-outline-primary" value="Send"/>
 				</form>
@@ -273,15 +273,15 @@
 			  </button>
 			</div>
 			<div class="modal-body">
-			  <form action="mailto:botnariartiom97@gmail.com" method="GET" enctype="text/plain">
-				<input class="form-control type-chosed" type="text" readonly> 
+			  <form action="mailto:botnariartiom97@gmail.com" method="POST" enctype="text/plain">
+				<input class="form-control type-chosed" type="text" name="princing_tarif" readonly> 
 				<div class="form-group">
 				  <label for="modal_name" class="col-form-label">Name:</label>
-				  <input type="text" class="form-control" id="modal_name" required>
+				  <input type="text" class="form-control" id="modal_name" name="name" required>
 				</div>
 				<div class="form-group">
 				  <label for="modal_form_email" class="col-form-label">Email:</label>
-				  <input type="email" class="form-control" id="modal_form_email" required>
+				  <input type="email" class="form-control" id="modal_form_email" name="email" required>
 				</div>
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 				<input type="submit" class="btn btn-primary" value="Send message"/>
